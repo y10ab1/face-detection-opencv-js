@@ -54,7 +54,7 @@ function openCvReady() {
         cv.imshow("canvas_output", dst);
         // schedule next one.
         let delay = 1000/FPS - (Date.now() - begin);
-        delay = 10
+        delay = 0.1
         setTimeout(processVideo, delay);
 }
 // schedule first one.
